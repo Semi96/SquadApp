@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           
+             x:Class="Squad.SquadEvents"
+             
+     Title="{Binding SquadName}">
+   
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+         
+            <Label Text="ScreenMessage:" FontSize="18" FontAttributes="Bold"></Label>
+            <Entry x:Name="ScreenMessage"></Entry>
+            <Button Text="Save" Clicked="apiPost"  FontSize="Micro"  />
+            <Label x:Name="lblLoadingText" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" Text="{Binding SquadName}"></Label>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

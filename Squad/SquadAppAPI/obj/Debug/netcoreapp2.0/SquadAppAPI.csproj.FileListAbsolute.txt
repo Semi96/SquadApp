@@ -1,0 +1,11 @@
+C:\SquadApp\Squad\Squad\SquadAppAPI\bin\Debug\netcoreapp2.0\SquadAppAPI.deps.json
+C:\SquadApp\Squad\Squad\SquadAppAPI\bin\Debug\netcoreapp2.0\SquadAppAPI.runtimeconfig.json
+C:\SquadApp\Squad\Squad\SquadAppAPI\bin\Debug\netcoreapp2.0\SquadAppAPI.runtimeconfig.dev.json
+C:\SquadApp\Squad\Squad\SquadAppAPI\bin\Debug\netcoreapp2.0\SquadAppAPI.dll
+C:\SquadApp\Squad\Squad\SquadAppAPI\bin\Debug\netcoreapp2.0\SquadAppAPI.pdb
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.csproj.CoreCompileInputs.cache
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.AssemblyInfoInputs.cache
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.AssemblyInfo.cs
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.dll
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.pdb
+C:\SquadApp\Squad\Squad\SquadAppAPI\obj\Debug\netcoreapp2.0\SquadAppAPI.csprojAssemblyReference.cache

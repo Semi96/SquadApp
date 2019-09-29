@@ -1,0 +1,1 @@
+C:\SquadApp\Squad\Squad\Squad.UWP\Squad.UWP.csproj;x86

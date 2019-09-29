@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Squad.SquadItemPage" >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Events" Clicked="squadEvents">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        <ToolbarItem Text="Chat" Clicked="squadChat">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Margin="20" VerticalOptions="FillAndExpand" Grid.Column="0"  Grid.Row="0"  Grid.ColumnSpan="2">
+                <StackLayout Orientation="Horizontal" Margin="0">
+                    <Label Text="{Binding SquadName}" FontSize="Medium" />
+                    <Label Text="&#xf044;" FontSize="Micro" VerticalOptions="End">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="onSquadEdit"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+                        </Label.FontFamily>
+                    </Label> 
+                </StackLayout>
+                <Label Text="Squad Name" FontSize="Micro"  />
+                <Entry Text="{Binding SquadName}"  FontSize="Micro" />
+
+
+            </StackLayout>
+            <StackLayout Margin="20" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" >
+                <Button Text="Save" Clicked="OnSaveClicked"  FontSize="Micro"  />
+                <Button Text="Delete" Clicked="OnDeleteClicked" FontSize="Micro"  />
+                <Button Text="Cancel" Clicked="OnCancelClicked" FontSize="Micro"  />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>

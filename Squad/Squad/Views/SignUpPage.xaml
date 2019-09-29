@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Squad.Views.SignUpPage">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label Text="Username" />
+                <Entry x:Name="usernameEntry" Placeholder="username" />
+                <Label Text="Password" />
+                <Entry x:Name="passwordEntry" IsPassword="true" />
+                <Label Text="Email address" />
+                <Entry x:Name="emailEntry" />
+                <Label Text="First Name" />
+                <Entry x:Name="firstnameEntry" />
+                <Label Text="Last Name" />
+                <Entry x:Name="lastnameEntry" />
+                <Label Text="Phone Number" />
+                <Entry x:Name="phonenumberEntry" />
+                <Label Text="Birth Date" />
+                <DatePicker x:Name="birthDatePicker"
+                   
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                   />
+                <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
+                <Label x:Name="messageLabel" Text="" TextColor="Red"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

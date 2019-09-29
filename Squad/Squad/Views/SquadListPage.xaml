@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Squad.SquadListPage" Title="Squad" >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="OnItemAdded">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected" VerticalOptions="StartAndExpand"  >
+        
+        <ListView.ItemTemplate >
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="1" BackgroundColor="#000000"
+                        Orientation="Vertical" >
+                        <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2" />
+                                <RowDefinition Height="15" />
+                                <RowDefinition Height="15" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2" />
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="2" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView Color="#1a1a1a" Grid.Column="1" VerticalOptions="CenterAndExpand" Grid.Row="1"  />
+                            <BoxView Color="#1a1a1a" Grid.Column="3" Grid.Row="1"/>
+                            <Label Text="{Binding SquadName}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1" TextColor="White" FontSize="Micro" />
+                        </Grid>
+                   <!-- <StackLayout Margin="0,10,0,0" Orientation="Vertical" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
+                        
+                    
+                    </StackLayout>-->
+                        </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

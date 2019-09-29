@@ -1,0 +1,11 @@
+C:\SquadApp\Squad\Squad\ChatService\bin\Debug\netcoreapp2.0\easychat.deps.json
+C:\SquadApp\Squad\Squad\ChatService\bin\Debug\netcoreapp2.0\easychat.runtimeconfig.json
+C:\SquadApp\Squad\Squad\ChatService\bin\Debug\netcoreapp2.0\easychat.runtimeconfig.dev.json
+C:\SquadApp\Squad\Squad\ChatService\bin\Debug\netcoreapp2.0\easychat.dll
+C:\SquadApp\Squad\Squad\ChatService\bin\Debug\netcoreapp2.0\easychat.pdb
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.csprojAssemblyReference.cache
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.csproj.CoreCompileInputs.cache
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.AssemblyInfoInputs.cache
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.AssemblyInfo.cs
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.dll
+C:\SquadApp\Squad\Squad\ChatService\obj\Debug\netcoreapp2.0\easychat.pdb

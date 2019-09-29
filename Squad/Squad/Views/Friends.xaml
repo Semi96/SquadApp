@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           
+             x:Class="Squad.Friends"
+             
+     Title="Friends">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="AddFriend">
+        </ToolbarItem>
+
+    
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <SearchBar Placeholder="Search For Friend..." TextChanged="SearchBar_OnTextChanged" HeightRequest="25" FontSize="Small" Margin="5" >
+                
+            </SearchBar>
+            <Button x:Name="deleteFriend" Text="&#xf057;" TextColor="White" FontSize="Micro" Clicked="onFriendDelete" VerticalOptions="Start" HorizontalOptions="Center" IsEnabled="False" IsVisible="False"  Grid.Column="4" Grid.Row="0">
+
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+                </Button.FontFamily>
+
+            </Button>
+            <ListView x:Name="listView" Margin="10"  VerticalOptions="StartAndExpand" ItemSelected="OnListItemSelected"  >
+
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell Height="20">
+                        <StackLayout  BackgroundColor="#000000"
+                        Orientation="Vertical" >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="10" />
+                                    <RowDefinition Height="12" />
+                                    <RowDefinition Height="12" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="45" />
+                                    <ColumnDefinition Width="10" />
+                                </Grid.ColumnDefinitions>
+                                    <BoxView Color="#1a1a1a" Grid.Column="1" VerticalOptions="StartAndExpand" Grid.Row="1" Margin="0" />
+                                    <BoxView Color="#1a1a1a" Grid.Column="1" VerticalOptions="StartAndExpand" Grid.Row="2" Margin="0"/>
+              
+                                                                    
+                                    <Label Text="{Binding friendName}" Margin="0" VerticalOptions="StartAndExpand" HorizontalOptions="Center" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1" TextColor="White" FontSize="Micro" />
+                                    <Label Text="{Binding firstName}" Margin="0"  VerticalOptions="StartAndExpand" HorizontalOptions="Center" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="2" TextColor="White" FontSize="Micro" />
+                                </Grid>
+                            <!-- <StackLayout Margin="0,10,0,0" Orientation="Vertical" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
+                        
+                    
+                    </StackLayout>-->
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
